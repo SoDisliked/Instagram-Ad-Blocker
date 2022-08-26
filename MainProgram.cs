@@ -112,7 +112,7 @@ namespace AddBlockerInstagram
 
         const int MAINVIEW_PADDING = 10;
 
-        const int MAINVIEW_PADDING = 31.
+        const int MAINVIEW_PADDING = 31;
 
         const int WM_CLOSE = 0x10;
         #endregion
@@ -275,10 +275,10 @@ static void removeAd()
                 }
 
                 // get rect of kakaotalk
-                RECT rectKakaoTalk = new RECT();
+                RECT rectInstagram = new RECT();
                 GetWindowRect(wnd, out rectInstagram);
 
-                // iterate all child windows of kakaotalk
+                // iterate all child windows of instagram
                 foreach (var childHwnd in childHwnds)
                 {
                     GetClassName(childHwnd, windowClass, windowClass.Capacity);
